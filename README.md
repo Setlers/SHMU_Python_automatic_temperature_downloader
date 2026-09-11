@@ -30,7 +30,7 @@ cd SHMU_Python_automatic_temperature_downloader
 Run the script:
 
 ```bash
-python SHMU_Python_automatic_temperature_downloader.py
+SHMU_automatik_temperature_downloader.py
 ```
 
 The results are saved to:
