@@ -16,7 +16,7 @@ rok = datetime.now().year
 
 url = f"https://www.shmu.sk/sk/?id=klimat_operativneudaje1&identif=11816&obdobie=1991-2020&page=1&rok={rok}&sub=1"
 
-r = requests.get(url)
+r = requests.get(url, timeout=30)
 r.raise_for_status()
 
 
@@ -75,7 +75,7 @@ if os.path.exists("teploty.csv"):
     # Odstránenie duplicitných dátumov
     df = df.drop_duplicates(
         subset="datum",
-        keep="first"
+        keep="last"
     )
 
     # Zoradenie podľa dátumu
