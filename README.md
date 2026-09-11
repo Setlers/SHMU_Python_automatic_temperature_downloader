@@ -56,4 +56,4 @@ https://www.shmu.sk/
 
 ## License
 
-No license has been selected yet.
+MIT License
